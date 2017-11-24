@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Game Play";
+}
+
+<h2>Game Play</h2>
+
+<form action="/Home/FireTop">
+    Top: <input type="range" name="possition" min="0" max="100" />
+    <input type="submit" value="Fire Top"/>
+</form>
+
+<form action="/Home/FireBottom">
+    Bottom: <input type="range" name="possition" min="0" max="100" />
+    <input type="submit" value="Fire Bottom" />
+</form>
+
+<form action="/Home/Reset">
+    <input type="submit" value="New Game"/>
+</form>

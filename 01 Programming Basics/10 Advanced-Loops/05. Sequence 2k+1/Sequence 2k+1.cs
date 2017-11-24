@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _05.Sequence_2k_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int readNumber = int.Parse(Console.ReadLine());
+            var num = 1;
+            while (num <= readNumber)
+            {
+                Console.WriteLine(num);
+                num = num * 2 + 1;
+            }
+
+        }
+    }
+}
