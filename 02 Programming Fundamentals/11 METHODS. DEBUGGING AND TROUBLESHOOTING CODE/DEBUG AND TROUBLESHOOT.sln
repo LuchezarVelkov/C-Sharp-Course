@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Blank Receipt", "01. Blank Receipt\01. Blank Receipt.csproj", "{36579BEC-BCE3-4C02-AA84-90ED2429D443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Sign of Integer Number", "02. Sign of Integer Number\02. Sign of Integer Number.csproj", "{680287F6-343F-4ACC-9F35-170B1081CFDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Printing Triangle", "03. Printing Triangle\03. Printing Triangle.csproj", "{C5B2E277-06CF-4226-A4A8-A3A4901506A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Draw a Filled Square", "04. Draw a Filled Square\04. Draw a Filled Square.csproj", "{577B45C7-1E88-41F4-9E2F-D18F23BBB7AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Temperature Conversion", "05. Temperature Conversion\05. Temperature Conversion.csproj", "{41680FFF-773C-495D-B1A2-53B299BC33FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36579BEC-BCE3-4C02-AA84-90ED2429D443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36579BEC-BCE3-4C02-AA84-90ED2429D443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36579BEC-BCE3-4C02-AA84-90ED2429D443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36579BEC-BCE3-4C02-AA84-90ED2429D443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{680287F6-343F-4ACC-9F35-170B1081CFDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{680287F6-343F-4ACC-9F35-170B1081CFDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{680287F6-343F-4ACC-9F35-170B1081CFDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{680287F6-343F-4ACC-9F35-170B1081CFDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B2E277-06CF-4226-A4A8-A3A4901506A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B2E277-06CF-4226-A4A8-A3A4901506A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B2E277-06CF-4226-A4A8-A3A4901506A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B2E277-06CF-4226-A4A8-A3A4901506A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{577B45C7-1E88-41F4-9E2F-D18F23BBB7AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{577B45C7-1E88-41F4-9E2F-D18F23BBB7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{577B45C7-1E88-41F4-9E2F-D18F23BBB7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{577B45C7-1E88-41F4-9E2F-D18F23BBB7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41680FFF-773C-495D-B1A2-53B299BC33FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41680FFF-773C-495D-B1A2-53B299BC33FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41680FFF-773C-495D-B1A2-53B299BC33FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41680FFF-773C-495D-B1A2-53B299BC33FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCB070AC-BAA0-4603-B1C3-9368BAA0F732}
+	EndGlobalSection
+EndGlobal
