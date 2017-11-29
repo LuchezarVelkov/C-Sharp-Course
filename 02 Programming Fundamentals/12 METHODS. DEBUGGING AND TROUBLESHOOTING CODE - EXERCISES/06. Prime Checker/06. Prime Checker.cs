@@ -23,9 +23,9 @@ namespace _06.Prime_Checker
             }
             if (isPrime) // for speed optimization, if readNumber is odd can`t be Prime.
             {
-                for (long i = 2; i <= readNumber - 1; i++)
+                for (int i2 = 2; i2 <= Math.Sqrt(readNumber); i2++)
                 {
-                    if (readNumber % i == 0) // one number is prime if can 
+                    if (readNumber % i2 == 0)
                     {
                         isPrime = false;
                         break;
