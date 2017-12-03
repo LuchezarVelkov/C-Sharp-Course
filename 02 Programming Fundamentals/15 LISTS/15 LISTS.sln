@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Remove Negatives and Reverse", "01. Remove Negatives and Reverse\01. Remove Negatives and Reverse.csproj", "{F8B2963C-38BF-46F9-9C21-813ADDDD26C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Append Lists", "02. Append Lists\02. Append Lists.csproj", "{D78F3473-C9CC-43C3-85A3-1DE56F95DABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Sum Adjacent Equal Numbers", "03. Sum Adjacent Equal Numbers\03. Sum Adjacent Equal Numbers.csproj", "{83B32C4C-31F8-4F4E-8C8D-6E22078C7A97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{F8B2963C-38BF-46F9-9C21-813ADDDD26C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8B2963C-38BF-46F9-9C21-813ADDDD26C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8B2963C-38BF-46F9-9C21-813ADDDD26C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78F3473-C9CC-43C3-85A3-1DE56F95DABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78F3473-C9CC-43C3-85A3-1DE56F95DABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78F3473-C9CC-43C3-85A3-1DE56F95DABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78F3473-C9CC-43C3-85A3-1DE56F95DABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B32C4C-31F8-4F4E-8C8D-6E22078C7A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B32C4C-31F8-4F4E-8C8D-6E22078C7A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B32C4C-31F8-4F4E-8C8D-6E22078C7A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B32C4C-31F8-4F4E-8C8D-6E22078C7A97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
