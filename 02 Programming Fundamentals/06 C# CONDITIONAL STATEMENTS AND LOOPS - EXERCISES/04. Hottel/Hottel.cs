@@ -1,65 +1,76 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace _04.Hottel
+namespace Hotel
 {
-    class Hottel
+    class Program
     {
         static void Main(string[] args)
         {
-            string month = Console.ReadLine();
-            int nights = int.Parse(Console.ReadLine());
-            var studioPrice = 0;
-            var doublePrice = 0;
-            var suitePrice = 0;
-            var studioDiscount = 0.0;
-            var doubleDiscount = 0.0;
-            var suiteDiscount = 0.0;
+            var month = Console.ReadLine();
+            var nights = int.Parse(Console.ReadLine());
+            var priceS = 0.0;
+            var priceD = 0.0;
+            var priceSuite = 0.0;
 
-            if (month == "May" || month == "October")
+            switch (month)
             {
-                studioPrice = 50;
-                doublePrice = 65;
-                suitePrice = 75;
-                if (nights > 7)
-                {
-                    studioDiscount = 0.05;
-                }
-            }
-            else if (month == "June" || month == "September")
-            {
-                studioPrice = 60;
-                doublePrice = 72;
-                suitePrice = 82;
-                if (nights > 14)
-                {
-                    doubleDiscount = 0.10;
-                }
-            }
-            else if (month == "July" || month == "August" || month == "December")
-            {
-                studioPrice = 68;
-                doublePrice = 77;
-                suitePrice = 89;
-                if (nights > 14)
-                {
-                    suiteDiscount = 0.15;
-                }
-            }
-            
-            var priceForStudio = (studioPrice * nights) - ((studioPrice * nights) * studioDiscount);
-            var priceForDouble = (doublePrice * nights) - ((doublePrice * nights) * doubleDiscount);
-            var priceForSuite = (suitePrice * nights) - ((suitePrice * nights) * suiteDiscount);
+                case "May":
+                case "October":
 
-            if (month == "September" || month == "October")
-            {
-                if (nights > 7)
-                {
-                    priceForStudio -= 60;
-                }
+                    priceS = 50;
+                    if (nights > 7)
+                    {
+                        priceS *= 0.95;
+                    }
+                    priceD = 65;
+
+                    priceSuite = 75;
+                    break;
+                case "June":
+                case "September":
+                    priceS = 60;
+                    priceD = 72;
+
+                    if (nights > 14)
+                    {
+                        priceD *= 0.90;
+                    }
+
+                    priceSuite = 82;
+
+                    break;
+                case "July":
+                case "August":
+                case "December":
+                    priceS = 68;
+
+                    priceD = 77;
+
+                    priceSuite = 89;
+
+                    if (nights > 14)
+                    {
+                        priceSuite *= 0.85;
+                    }
+
+                    break;
             }
-            Console.WriteLine($"Studio: {priceForStudio:F} lv.");
-            Console.WriteLine($"Double: {priceForDouble:F} lv.");
-            Console.WriteLine($"Suite: {priceForSuite:F} lv.");
+            var totalStudioPrice = priceS * nights;
+            var totalDoublePrice = priceD * nights;
+            var totalSuitePrice = priceSuite * nights;
+
+            if ((month == "September" && nights > 7) ||
+                    (month == "October" && nights > 7))
+            {
+                totalStudioPrice -= priceS;
+            }
+            Console.WriteLine("Studio: {0:F2} lv.", totalStudioPrice);
+            Console.WriteLine("Double: {0:F2} lv.", totalDoublePrice);
+            Console.WriteLine("Suite: {0:F2} lv.", totalSuitePrice);
         }
     }
 }

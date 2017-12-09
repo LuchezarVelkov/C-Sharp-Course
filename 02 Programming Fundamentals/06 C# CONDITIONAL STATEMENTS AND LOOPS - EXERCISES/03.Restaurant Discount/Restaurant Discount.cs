@@ -1,57 +1,48 @@
 ﻿using System;
 
-namespace _03.Restaurant_Dis
+public class RestaurantDiscount
 {
-    class Program
+    public static void Main()
     {
-        static void Main(string[] args)
-        {
-            int groupSize = int.Parse(Console.ReadLine());
-            string package = Console.ReadLine();
-            string place = null;
-            double price = 0;
-            double discount = 0;
+        int customers = int.Parse(Console.ReadLine());
+        string service = Console.ReadLine();
+        int servicePackPrice = 0;
+        string hallType = string.Empty;
+        double hallPrice = 0;
+        double discount = 0;
 
-            if (groupSize <= 50)
-            {
-                place = "Small Hall";
-                price = 2500;
-            }
-            else if (groupSize <= 100)
-            {
-                place = "Terrace";
-                price = 5000;
-            }
-            else if (groupSize <= 120)
-            {
-                place = "Great Hall";
-                price = 7500;
-            }
-            else if (groupSize > 120)
-            {
-                Console.WriteLine("We do not have an appropriate hall.");
-            }
-            if (groupSize < 120)
-            {
-                if (package == "Normal")
-                {
-                    price += 500;
-                    discount = 0.5;
-                }
-                else if (package == "Gold")
-                {
-                    price += 750;
-                    discount = 0.10;
-                }
-                else if (package == "Platinum")
-                {
-                    price += 1000;
-                    discount = 0.15;
-                }
-                double priceForPerson = (price - (price * discount)) / groupSize;
-                Console.WriteLine($"We can offer you the {place}");
-                Console.WriteLine($"The price per person is {priceForPerson:F}$");
-            }
+        switch (service)
+        {
+            case "Normal": servicePackPrice = 500; discount = 0.95; break;
+            case "Gold": servicePackPrice = 750; discount = 0.90; break;
+            case "Platinum": servicePackPrice = 1000; discount = 0.85; break;
         }
+
+        if (customers <= 50)
+        {
+            hallPrice = 2500;
+            hallType = "Small Hall";
+        }
+        else if (customers <= 75)
+        {
+            hallPrice = 5000;
+            hallType = "Terrace";
+        }
+        else if (customers <= 120)
+        {
+            hallPrice = 7500;
+            hallType = "Great Hall";
+        }
+        else
+        {
+            Console.WriteLine("We do not have an appropriate hall.");
+            Environment.Exit(0);
+        }
+
+        double totalPriceInclDiscount = (hallPrice + servicePackPrice) * discount;
+        double pricePerPerson = totalPriceInclDiscount / customers;
+
+        Console.WriteLine($"We can offer you the {hallType}");
+        Console.WriteLine($"The price per person is {pricePerPerson:f2}$");
     }
 }
