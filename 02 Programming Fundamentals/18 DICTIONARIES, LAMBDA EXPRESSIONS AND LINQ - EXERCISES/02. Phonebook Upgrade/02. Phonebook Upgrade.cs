@@ -8,7 +8,7 @@ namespace _01.Phonebook
     {
         static void Main(string[] args)
         {
-            Dictionary<string, string> phoneBook = new Dictionary<string, string>();
+            SortedDictionary<string, string> phoneBook = new SortedDictionary<string, string>();
 
             string command = Console.ReadLine();
 
@@ -22,10 +22,9 @@ namespace _01.Phonebook
                 {
                     string key = phoneParameters[1];
                     string value = phoneParameters[2];
-                    //phoneBook.Add(key, value);
                     phoneBook[key] = value;
                 }
-                else // (phoneParameters[0] == "S")
+                else if (phoneParameters[0] == "S")
                 {
                     string key = phoneParameters[1];
                     if (phoneBook.ContainsKey(key))
@@ -37,7 +36,13 @@ namespace _01.Phonebook
                         Console.WriteLine($"Contact {key} does not exist.");
                     }
                 }
-
+                else if (phoneParameters[0] == "ListAll")
+                {
+                    foreach (var item in phoneBook)
+                    {
+                        Console.WriteLine($"{item.Key} -> {item.Value}");
+                    }
+                }
                 command = Console.ReadLine();
             }
         }
