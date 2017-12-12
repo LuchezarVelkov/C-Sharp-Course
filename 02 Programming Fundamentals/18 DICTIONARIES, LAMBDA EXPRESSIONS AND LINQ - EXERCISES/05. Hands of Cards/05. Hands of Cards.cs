@@ -23,7 +23,6 @@ namespace _05.Hands_of_Cards
                     stop = true;
                     break;
                 }
-                //read[1] = GetScores(read[1]);
 
                 if (nameAndScore.ContainsKey(read[0]))
                 {
@@ -54,12 +53,10 @@ namespace _05.Hands_of_Cards
                 .Select(x => x.Trim())
                 .Distinct()
                 .ToArray();
-            //readCards = readCards.Distinct().ToArray();
 
-            foreach (var i in readCards) //2C, 4H, 9H, AS, QS, 10C (J, Q, K, A)
+            foreach (var i in readCards)
             {
                 string item = i;
-                // Да се пресметне стойността на картата умножена според боята !!!
                 if (item.Length == 3)
                 {
                     int power = 10;
