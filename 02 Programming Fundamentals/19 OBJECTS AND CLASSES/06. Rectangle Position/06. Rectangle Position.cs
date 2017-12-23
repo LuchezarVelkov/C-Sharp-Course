@@ -10,6 +10,7 @@ namespace _06.Rectangle_Position
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
